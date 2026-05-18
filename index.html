@@ -3,29 +3,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cuentas por Cobrar · Canal Moderno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1f2937;font-size:14px;padding:16px 12px;-webkit-font-smoothing:antialiased}
+.header-title,.section-title,.kpi-val,.sub-title,.tbl-header-title{font-family:'Bebas Neue',Impact,'Arial Narrow',sans-serif!important;letter-spacing:0.5px}
 .wrap{max-width:1480px;margin:0 auto}
 .wrap.auth-pending{visibility:hidden}
 
 /* HEADER */
-.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;padding:14px 22px;background:white;border-radius:10px;border-bottom:5px solid #e30613;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;padding:14px 22px;background:white;border-radius:10px;border-bottom:5px solid #e00206;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
 .header-left{display:flex;align-items:center;gap:16px}
 .header-logo{height:54px}
-.header-title{font-size:26px;font-weight:900;color:#14397a;line-height:1.1;letter-spacing:-0.4px}
+.header-title{font-size:26px;font-weight:900;color:#2b2f51;line-height:1.1;letter-spacing:-0.4px}
 .header-subtitle{font-size:11px;color:#64748b;margin-top:4px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px}
 .header-right{text-align:right;font-size:11px;color:#64748b}
-.header-right strong{color:#14397a;font-size:13px;display:block;margin-top:2px}
+.header-right strong{color:#2b2f51;font-size:13px;display:block;margin-top:2px}
 
 /* SECCION TITLE */
-.section-title{font-size:13px;font-weight:900;color:#14397a;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;padding:6px 14px;background:linear-gradient(90deg,#dbeafe,white);border-left:4px solid #e30613;display:inline-block}
+.section-title{font-size:13px;font-weight:900;color:#2b2f51;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;padding:6px 14px;background:linear-gradient(90deg,#dbeafe,white);border-left:4px solid #e00206;display:inline-block}
 
 /* SECCION 1: RESUMEN */
 .section-card{background:white;border-radius:10px;padding:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04);border:1px solid #e5e7eb;margin-bottom:18px}
 .kpis-global{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .kpi-global{padding:22px 20px;border-radius:12px;color:white;box-shadow:0 4px 12px rgba(15,23,42,0.10)}
-.kpi-global.k-total{background:linear-gradient(135deg,#14397a,#0c2754)}
+.kpi-global.k-total{background:linear-gradient(135deg,#2b2f51,#1a1c30)}
 .kpi-global.k-aldia{background:linear-gradient(135deg,#15803d,#14532d)}
 .kpi-global.k-vencido{background:linear-gradient(135deg,#dc2626,#7f1d1d)}
 .kpi-global.k-clientes{background:linear-gradient(135deg,#475569,#334155)}
@@ -36,7 +40,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
 /* SUBCANAL CARDS */
 .sub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
 .sub-card{border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;background:white;cursor:pointer;transition:all .2s}
-.sub-card:hover{border-color:#14397a;box-shadow:0 6px 20px rgba(20,57,122,0.15);transform:translateY(-2px)}
+.sub-card:hover{border-color:#2b2f51;box-shadow:0 6px 20px rgba(20,57,122,0.15);transform:translateY(-2px)}
 .sub-head{padding:14px 18px;color:white}
 .sub-title{font-size:16px;font-weight:900;letter-spacing:-0.3px}
 .sub-clientes{font-size:11.5px;opacity:0.85;font-weight:600;margin-top:2px}
@@ -46,7 +50,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
 .sub-row strong{font-size:14.5px;font-weight:800;font-variant-numeric:tabular-nums}
 .sub-row-total{padding-top:0;border-bottom:2px solid #e2e8f0}
 .sub-row-total span{font-size:11px;color:#64748b;font-weight:700;text-transform:uppercase;letter-spacing:0.8px}
-.sub-row-total strong{color:#14397a;font-size:22px}
+.sub-row-total strong{color:#2b2f51;font-size:22px}
 .sub-pct-bar{height:8px;background:#fee2e2;border-radius:4px;overflow:hidden;margin-top:14px}
 .sub-pct-fill{height:100%;background:linear-gradient(90deg,#15803d,#14532d);border-radius:4px}
 .sub-pct-label{text-align:center;font-size:11px;color:#475569;font-weight:700;margin-top:6px;letter-spacing:0.5px}
@@ -54,17 +58,17 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
 /* SECCION 2: DETALLE */
 .detail-main{display:grid;grid-template-columns:1fr 320px;gap:14px}
 .tbl-card{background:white;border-radius:10px;border:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,0.04);overflow:hidden}
-.tbl-header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#14397a;color:white}
+.tbl-header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#2b2f51;color:white}
 .tbl-header-title{font-size:13.5px;font-weight:800;letter-spacing:0.5px}
 .tbl-header-count{font-size:11.5px;color:#bfdbfe;font-weight:600}
 .tbl-wrap{max-height:600px;overflow:auto}
 .cxc-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
 .cxc-tbl thead{position:sticky;top:0;z-index:5}
-.cxc-tbl thead th{background:#1e3a5f;color:white;padding:10px 12px;text-align:right;font-weight:700;font-size:11.5px;border:1px solid #0c2754}
+.cxc-tbl thead th{background:#21299d;color:white;padding:10px 12px;text-align:right;font-weight:700;font-size:11.5px;border:1px solid #1a1c30}
 .cxc-tbl thead th:nth-child(-n+2){text-align:left;padding-left:14px}
-.cxc-tbl thead th:first-child{background:#0c2754}
+.cxc-tbl thead th:first-child{background:#1a1c30}
 .cxc-tbl tbody td{padding:8px 12px;border:1px solid #e2e8f0;font-size:12px;background:white;font-variant-numeric:tabular-nums;text-align:right}
-.cxc-tbl tbody td:first-child{text-align:left;padding-left:14px;color:#14397a;font-weight:700;font-size:11.5px}
+.cxc-tbl tbody td:first-child{text-align:left;padding-left:14px;color:#2b2f51;font-weight:700;font-size:11.5px}
 .cxc-tbl tbody td:nth-child(2){text-align:left;color:#64748b;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.4px}
 .cxc-tbl tbody tr:nth-child(even) td{background:#f8fafc}
 .cxc-tbl tbody td.zero{color:#cbd5e1}
@@ -80,7 +84,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
 .cxc-tbl tbody tr:nth-child(even) td.bucket-121{background:#fca5a5}
 .cxc-tbl tbody td.total{font-weight:800;color:#0f172a;background:#f1f5f9}
 .cxc-tbl tbody tr:nth-child(even) td.total{background:#e2e8f0}
-.cxc-tbl tfoot td{padding:11px 12px;background:#e30613;color:white;font-weight:900;font-size:13px;text-align:right;border:1px solid #b3050f}
+.cxc-tbl tfoot td{padding:11px 12px;background:#e00206;color:white;font-weight:900;font-size:13px;text-align:right;border:1px solid #b3050f}
 .cxc-tbl tfoot td:first-child{text-align:left;padding-left:14px;background:#b3050f;letter-spacing:1px}
 
 /* SLICERS */
@@ -94,11 +98,11 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
 .slicer-body{padding:10px;display:flex;flex-wrap:wrap;gap:5px;max-height:300px;overflow-y:auto}
 .chip{padding:6px 10px;border:1.5px solid #cbd5e1;background:white;color:#475569;border-radius:6px;font-size:11.5px;font-weight:700;cursor:pointer;transition:all .15s;line-height:1.2;font-family:inherit}
 .chip:hover{background:#f1f5f9;border-color:#94a3b8}
-.chip.active{background:#14397a;color:white;border-color:#14397a}
+.chip.active{background:#2b2f51;color:white;border-color:#2b2f51}
 .chip-count{font-size:9.5px;font-weight:600;opacity:0.7;margin-left:3px}
 .slicer-search{padding:10px 12px 6px;border-bottom:1px solid #f1f5f9}
 .slicer-search input{width:100%;padding:7px 10px;border:1.5px solid #cbd5e1;border-radius:6px;font-size:12px;font-family:inherit;color:#0f172a}
-.slicer-search input:focus{outline:none;border-color:#14397a}
+.slicer-search input:focus{outline:none;border-color:#2b2f51}
 
 /* COLUMNA CLIENTE FIJADA (estilo Excel freeze pane) */
 .cxc-tbl thead th:first-child,
@@ -109,7 +113,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
   z-index:3;
   box-shadow:2px 0 6px -2px rgba(0,0,0,0.18);
 }
-.cxc-tbl thead th:first-child{z-index:6;background:#0c2754}
+.cxc-tbl thead th:first-child{z-index:6;background:#1a1c30}
 .cxc-tbl tbody td:first-child{background:white}
 .cxc-tbl tbody tr:nth-child(even) td:first-child{background:#f8fafc}
 .cxc-tbl tfoot td:first-child{z-index:4}
@@ -177,16 +181,16 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
 }
 
 /* LOGIN */
-#login-screen{position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#14397a,#0c2754);display:flex;align-items:center;justify-content:center;z-index:10000;padding:20px}
+#login-screen{position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#2b2f51,#1a1c30);display:flex;align-items:center;justify-content:center;z-index:10000;padding:20px}
 #login-screen.hide{display:none}
 .login-card{background:white;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,0.45);padding:36px 32px;max-width:380px;width:100%}
 .login-logo{text-align:center;margin-bottom:10px}
 .login-logo img{height:54px}
-.login-title{text-align:center;font-size:22px;font-weight:900;color:#14397a;letter-spacing:-0.3px}
+.login-title{text-align:center;font-size:22px;font-weight:900;color:#2b2f51;letter-spacing:-0.3px}
 .login-subtitle{text-align:center;font-size:11px;color:#64748b;margin-bottom:22px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700}
 .login-input{display:block;width:100%;padding:11px 14px;border:1.5px solid #cbd5e1;border-radius:8px;font-size:14px;font-family:inherit;margin-bottom:12px}
-.login-input:focus{outline:none;border-color:#14397a;box-shadow:0 0 0 3px rgba(20,57,122,0.12)}
-.login-btn{width:100%;padding:12px 16px;background:#14397a;color:white;border:none;border-radius:8px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit}
+.login-input:focus{outline:none;border-color:#2b2f51;box-shadow:0 0 0 3px rgba(20,57,122,0.12)}
+.login-btn{width:100%;padding:12px 16px;background:#2b2f51;color:white;border:none;border-radius:8px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit}
 .login-btn:hover{background:#1e4a99}
 .login-btn:disabled{background:#94a3b8;cursor:wait}
 .login-error{background:#fef2f2;border:1px solid #fecaca;color:#b91c1c;padding:10px 12px;border-radius:6px;font-size:12.5px;margin-bottom:12px;display:none}
@@ -236,7 +240,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
     </div>
     <div class="header-right">
       Corte SAP<strong>18/05/2026</strong>
-      <div style="margin-top:6px">Actualizado<strong>18/05/2026 16:48</strong></div>
+      <div style="margin-top:6px">Actualizado<strong>18/05/2026 17:36</strong></div>
     </div>
   </div>
 
@@ -288,7 +292,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
     <div class="section-title">📊 Por Subcanal (click para filtrar)</div>
     <div class="sub-grid">
     <div class="sub-card" data-sub="SUPERMERCADO" onclick="goToDetail('SUPERMERCADO')">
-      <div class="sub-head" style="background:#14397a">
+      <div class="sub-head" style="background:#2b2f51">
         <div class="sub-title">🛒 Supermercados</div>
         <div class="sub-clientes">7 clientes · click para detalle</div>
       </div>
@@ -328,7 +332,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
       </div>
     </div>
     <div class="sub-card" data-sub="INSTITUCIONES" onclick="goToDetail('INSTITUCIONES')">
-      <div class="sub-head" style="background:#0c4a6e">
+      <div class="sub-head" style="background:#0d2a6d">
         <div class="sub-title">🏢 Instituciones</div>
         <div class="sub-clientes">14 clientes · click para detalle</div>
       </div>
@@ -456,7 +460,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
     </div>
   </div>
 
-  <div class="footer">Sistema automático SAP · Alimentos Barcelona · Actualizado 18/05/2026 16:48</div>
+  <div class="footer">Sistema automático SAP · Alimentos Barcelona · Actualizado 18/05/2026 17:36</div>
 
 </div>
 
@@ -520,7 +524,7 @@ body{font-family:Calibri,'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#1
 
 <!-- INTERACTIVITY -->
 <script>
-const DATA = {"clientes": [{"cliente": "OPERADORA DE TIENDAS, S. A.", "subcanal": "SUPERMERCADO", "cc": 819248.8, "_30": 623537.95, "_60": 278285.78, "_90": 0.0, "_120": 364.0, "_121": 0.0, "total": 1721436.53, "saldo_real": 902187.73}, {"cliente": "ALIMENTOS CORPORATIVOS CORALSA, S. A.", "subcanal": "INSTITUCIONES", "cc": 812150.0, "_30": 295945.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1108095.0, "saldo_real": 295945.0}, {"cliente": "GRUPO DE TIENDAS ASOCIADAS, S. A.", "subcanal": "SUPERMERCADO", "cc": 558734.15, "_30": 231030.82, "_60": 0.0, "_90": 5830.0, "_120": 0.0, "_121": 0.0, "total": 795594.97, "saldo_real": 236860.82}, {"cliente": "UNISUPER, S. A.", "subcanal": "SUPERMERCADO", "cc": 247593.4, "_30": 182879.03, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 430472.43, "saldo_real": 182879.03}, {"cliente": "MEGARED DE SUPERMERCADOS, S. A.", "subcanal": "SUPERMERCADO", "cc": 180845.0, "_30": 59119.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 239964.0, "saldo_real": 59119.0}, {"cliente": "SISTEMAS NUTRICIONALES, S. A.", "subcanal": "INSTITUCIONES", "cc": 111937.64, "_30": 40233.63, "_60": 0.05, "_90": 0.0, "_120": 0.0, "_121": 4257.0, "total": 156428.32, "saldo_real": 44490.68}, {"cliente": "INGENIO MAGDALENA, S. A.", "subcanal": "INSTITUCIONES", "cc": 116283.01, "_30": 18481.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 134764.01, "saldo_real": 18481.0}, {"cliente": "GRAN GALLO", "subcanal": "SUPERMERCADO", "cc": 121494.5, "_30": -2135.8, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 119358.7, "saldo_real": -2135.8}, {"cliente": "CORPORACION LOS LIRIOS, S. A.", "subcanal": "INSTITUCIONES", "cc": 41764.46, "_30": 44621.52, "_60": 25933.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 112318.98, "saldo_real": 70554.52}, {"cliente": "ENCA", "subcanal": "GUBERNAMENTALES", "cc": 31124.99, "_30": 14383.92, "_60": 28767.84, "_90": 29026.78, "_120": 0.0, "_121": 928.0, "total": 104231.53, "saldo_real": 73106.54}, {"cliente": "ANA LUCIA ARGUETA GARCIA", "subcanal": "INSTITUCIONES", "cc": 33228.86, "_30": 39318.38, "_60": 23704.73, "_90": 1084.25, "_120": 1020.65, "_121": 0.0, "total": 98356.87, "saldo_real": 65128.01}, {"cliente": "ROOSEVELT", "subcanal": "GUBERNAMENTALES", "cc": 28500.0, "_30": 33150.0, "_60": 17350.0, "_90": 2025.0, "_120": 0.0, "_121": 10400.0, "total": 91425.0, "saldo_real": 62925.0}, {"cliente": "SAN JUAN DE DIOS", "subcanal": "GUBERNAMENTALES", "cc": 23220.0, "_30": 50430.0, "_60": 16250.0, "_90": 0.0, "_120": 0.0, "_121": 1080.0, "total": 90980.0, "saldo_real": 67760.0}, {"cliente": "INSTITUTO GUATEMALTECO DE SEGURIDAD SOCIAL", "subcanal": "GUBERNAMENTALES", "cc": 0.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 59485.0, "total": 59485.0, "saldo_real": 59485.0}, {"cliente": "LA BODEGONA DE ANTIGUA, S. A.", "subcanal": "SUPERMERCADO", "cc": 29566.51, "_30": 6514.5, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 36081.01, "saldo_real": 6514.5}, {"cliente": "TIENDAS EN RUTA, S. A.", "subcanal": "INSTITUCIONES", "cc": 23218.0, "_30": 11699.01, "_60": 0.01, "_90": 548.2, "_120": 0.0, "_121": 0.0, "total": 35465.22, "saldo_real": 12247.22}, {"cliente": "CENTRAL AGRO INDUSTRIAL GUATEMALTECA, S. A.", "subcanal": "INSTITUCIONES", "cc": 19949.55, "_30": 15303.06, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 35252.61, "saldo_real": 15303.06}, {"cliente": "ZOOLOGICO", "subcanal": "GUBERNAMENTALES", "cc": 20650.0, "_30": 7070.0, "_60": 2240.0, "_90": 0.0, "_120": 2170.0, "_121": 2170.0, "total": 34300.0, "saldo_real": 13650.0}, {"cliente": "PEDRO DE BETHANCOURT", "subcanal": "GUBERNAMENTALES", "cc": 16728.5, "_30": 4255.0, "_60": 8459.0, "_90": 0.0, "_120": 0.0, "_121": 2700.0, "total": 32142.5, "saldo_real": 15414.0}, {"cliente": "TIENDAS DE ORIENTE, S. A.", "subcanal": "SUPERMERCADO", "cc": 16425.41, "_30": 7439.84, "_60": 0.01, "_90": 0.0, "_120": 0.0, "_121": 482.8, "total": 24348.06, "saldo_real": 7922.65}, {"cliente": "FRANQUICIAS E INVERSIONES", "subcanal": "INSTITUCIONES", "cc": 10822.0, "_30": 5420.0, "_60": 4748.0, "_90": 720.0, "_120": 0.0, "_121": 804.0, "total": 22514.0, "saldo_real": 11692.0}, {"cliente": "INVERSIONES JM", "subcanal": "GUBERNAMENTALES", "cc": 20272.78, "_30": 0.0, "_60": -0.04, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 20272.74, "saldo_real": -0.04}, {"cliente": "IGG DE PUERTO BARRIOS", "subcanal": "GUBERNAMENTALES", "cc": 18166.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 18166.0, "saldo_real": 0.0}, {"cliente": "SERVICIOS CAÑEROS, S. A.", "subcanal": "INSTITUCIONES", "cc": 7467.0, "_30": 0.0, "_60": 8520.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 15987.0, "saldo_real": 8520.0}, {"cliente": "H.  ENFERMEDADES RESPIRATORIAS", "subcanal": "GUBERNAMENTALES", "cc": 13551.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 13551.0, "saldo_real": 0.0}, {"cliente": "INGENIO PALO GORDO, S. A.", "subcanal": "INSTITUCIONES", "cc": 10696.78, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 10696.78, "saldo_real": 0.0}, {"cliente": "BARCELO GESTION HOTELERA, S. A.", "subcanal": "INSTITUCIONES", "cc": 3921.0, "_30": 4371.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 1500.0, "total": 9792.0, "saldo_real": 5871.0}, {"cliente": "IRTRA", "subcanal": "GUBERNAMENTALES", "cc": 9375.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 9375.0, "saldo_real": 0.0}, {"cliente": "COMPAÑIA AGRICOLA INDUSTRIAL SANTA ANA, S. A.", "subcanal": "INSTITUCIONES", "cc": 5863.0, "_30": 0.0, "_60": 441.25, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 6304.25, "saldo_real": 441.25}, {"cliente": "YAKAR, S. A.", "subcanal": "INSTITUCIONES", "cc": 3709.0, "_30": 1104.0, "_60": 0.0, "_90": 6.0, "_120": 125.0, "_121": 102.0, "total": 5046.0, "saldo_real": 1337.0}, {"cliente": "CIBIDIVERSI, S. A.", "subcanal": "INSTITUCIONES", "cc": 4331.5, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 4331.5, "saldo_real": 0.0}, {"cliente": "SUPERMERCADOS VARIOS", "subcanal": "SUPERMERCADO", "cc": 188.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 2509.54, "total": 2697.54, "saldo_real": 2509.54}, {"cliente": "CEMESA", "subcanal": "INSTITUCIONES", "cc": 990.0, "_30": 810.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1800.0, "saldo_real": 810.0}, {"cliente": "HOT DOG'S EJECUTIVOS EL CHINO, LOS SHUKOS", "subcanal": "INSTITUCIONES", "cc": 1568.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1568.0, "saldo_real": 0.0}, {"cliente": "LIGA NACIONAL CONTRA EL CANCER GUATEMALA", "subcanal": "GUBERNAMENTALES", "cc": 320.0, "_30": 1175.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1495.0, "saldo_real": 1175.0}, {"cliente": "ARUDESARROLLOS, S. A.", "subcanal": "INSTITUCIONES", "cc": 630.0, "_30": 812.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1442.0, "saldo_real": 812.0}, {"cliente": "ANTOJITOS", "subcanal": "INSTITUCIONES", "cc": 1411.2, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1411.2, "saldo_real": 0.0}, {"cliente": "CENTRO MEDICO MILITAR", "subcanal": "GUBERNAMENTALES", "cc": 0.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1221.8, "saldo_real": 0.0}, {"cliente": "H. DE AMATITLAN", "subcanal": "GUBERNAMENTALES", "cc": 0.0, "_30": 0.0, "_60": 0.0, "_90": 600.0, "_120": 0.0, "_121": 0.0, "total": 600.0, "saldo_real": 600.0}, {"cliente": "FOLKLORICA, S. A.", "subcanal": "INSTITUCIONES", "cc": 270.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 270.0, "saldo_real": 0.0}], "subcanales": ["SUPERMERCADO", "INSTITUCIONES", "GUBERNAMENTALES"], "fecha_corte": "18/05/2026", "actualizado": "18/05/2026 16:48"};
+const DATA = {"clientes": [{"cliente": "OPERADORA DE TIENDAS, S. A.", "subcanal": "SUPERMERCADO", "cc": 819248.8, "_30": 623537.95, "_60": 278285.78, "_90": 0.0, "_120": 364.0, "_121": 0.0, "total": 1721436.53, "saldo_real": 902187.73}, {"cliente": "ALIMENTOS CORPORATIVOS CORALSA, S. A.", "subcanal": "INSTITUCIONES", "cc": 812150.0, "_30": 295945.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1108095.0, "saldo_real": 295945.0}, {"cliente": "GRUPO DE TIENDAS ASOCIADAS, S. A.", "subcanal": "SUPERMERCADO", "cc": 558734.15, "_30": 231030.82, "_60": 0.0, "_90": 5830.0, "_120": 0.0, "_121": 0.0, "total": 795594.97, "saldo_real": 236860.82}, {"cliente": "UNISUPER, S. A.", "subcanal": "SUPERMERCADO", "cc": 247593.4, "_30": 182879.03, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 430472.43, "saldo_real": 182879.03}, {"cliente": "MEGARED DE SUPERMERCADOS, S. A.", "subcanal": "SUPERMERCADO", "cc": 180845.0, "_30": 59119.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 239964.0, "saldo_real": 59119.0}, {"cliente": "SISTEMAS NUTRICIONALES, S. A.", "subcanal": "INSTITUCIONES", "cc": 111937.64, "_30": 40233.63, "_60": 0.05, "_90": 0.0, "_120": 0.0, "_121": 4257.0, "total": 156428.32, "saldo_real": 44490.68}, {"cliente": "INGENIO MAGDALENA, S. A.", "subcanal": "INSTITUCIONES", "cc": 116283.01, "_30": 18481.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 134764.01, "saldo_real": 18481.0}, {"cliente": "GRAN GALLO", "subcanal": "SUPERMERCADO", "cc": 121494.5, "_30": -2135.8, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 119358.7, "saldo_real": -2135.8}, {"cliente": "CORPORACION LOS LIRIOS, S. A.", "subcanal": "INSTITUCIONES", "cc": 41764.46, "_30": 44621.52, "_60": 25933.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 112318.98, "saldo_real": 70554.52}, {"cliente": "ENCA", "subcanal": "GUBERNAMENTALES", "cc": 31124.99, "_30": 14383.92, "_60": 28767.84, "_90": 29026.78, "_120": 0.0, "_121": 928.0, "total": 104231.53, "saldo_real": 73106.54}, {"cliente": "ANA LUCIA ARGUETA GARCIA", "subcanal": "INSTITUCIONES", "cc": 33228.86, "_30": 39318.38, "_60": 23704.73, "_90": 1084.25, "_120": 1020.65, "_121": 0.0, "total": 98356.87, "saldo_real": 65128.01}, {"cliente": "ROOSEVELT", "subcanal": "GUBERNAMENTALES", "cc": 28500.0, "_30": 33150.0, "_60": 17350.0, "_90": 2025.0, "_120": 0.0, "_121": 10400.0, "total": 91425.0, "saldo_real": 62925.0}, {"cliente": "SAN JUAN DE DIOS", "subcanal": "GUBERNAMENTALES", "cc": 23220.0, "_30": 50430.0, "_60": 16250.0, "_90": 0.0, "_120": 0.0, "_121": 1080.0, "total": 90980.0, "saldo_real": 67760.0}, {"cliente": "INSTITUTO GUATEMALTECO DE SEGURIDAD SOCIAL", "subcanal": "GUBERNAMENTALES", "cc": 0.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 59485.0, "total": 59485.0, "saldo_real": 59485.0}, {"cliente": "LA BODEGONA DE ANTIGUA, S. A.", "subcanal": "SUPERMERCADO", "cc": 29566.51, "_30": 6514.5, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 36081.01, "saldo_real": 6514.5}, {"cliente": "TIENDAS EN RUTA, S. A.", "subcanal": "INSTITUCIONES", "cc": 23218.0, "_30": 11699.01, "_60": 0.01, "_90": 548.2, "_120": 0.0, "_121": 0.0, "total": 35465.22, "saldo_real": 12247.22}, {"cliente": "CENTRAL AGRO INDUSTRIAL GUATEMALTECA, S. A.", "subcanal": "INSTITUCIONES", "cc": 19949.55, "_30": 15303.06, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 35252.61, "saldo_real": 15303.06}, {"cliente": "ZOOLOGICO", "subcanal": "GUBERNAMENTALES", "cc": 20650.0, "_30": 7070.0, "_60": 2240.0, "_90": 0.0, "_120": 2170.0, "_121": 2170.0, "total": 34300.0, "saldo_real": 13650.0}, {"cliente": "PEDRO DE BETHANCOURT", "subcanal": "GUBERNAMENTALES", "cc": 16728.5, "_30": 4255.0, "_60": 8459.0, "_90": 0.0, "_120": 0.0, "_121": 2700.0, "total": 32142.5, "saldo_real": 15414.0}, {"cliente": "TIENDAS DE ORIENTE, S. A.", "subcanal": "SUPERMERCADO", "cc": 16425.41, "_30": 7439.84, "_60": 0.01, "_90": 0.0, "_120": 0.0, "_121": 482.8, "total": 24348.06, "saldo_real": 7922.65}, {"cliente": "FRANQUICIAS E INVERSIONES", "subcanal": "INSTITUCIONES", "cc": 10822.0, "_30": 5420.0, "_60": 4748.0, "_90": 720.0, "_120": 0.0, "_121": 804.0, "total": 22514.0, "saldo_real": 11692.0}, {"cliente": "INVERSIONES JM", "subcanal": "GUBERNAMENTALES", "cc": 20272.78, "_30": 0.0, "_60": -0.04, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 20272.74, "saldo_real": -0.04}, {"cliente": "IGG DE PUERTO BARRIOS", "subcanal": "GUBERNAMENTALES", "cc": 18166.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 18166.0, "saldo_real": 0.0}, {"cliente": "SERVICIOS CAÑEROS, S. A.", "subcanal": "INSTITUCIONES", "cc": 7467.0, "_30": 0.0, "_60": 8520.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 15987.0, "saldo_real": 8520.0}, {"cliente": "H.  ENFERMEDADES RESPIRATORIAS", "subcanal": "GUBERNAMENTALES", "cc": 13551.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 13551.0, "saldo_real": 0.0}, {"cliente": "INGENIO PALO GORDO, S. A.", "subcanal": "INSTITUCIONES", "cc": 10696.78, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 10696.78, "saldo_real": 0.0}, {"cliente": "BARCELO GESTION HOTELERA, S. A.", "subcanal": "INSTITUCIONES", "cc": 3921.0, "_30": 4371.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 1500.0, "total": 9792.0, "saldo_real": 5871.0}, {"cliente": "IRTRA", "subcanal": "GUBERNAMENTALES", "cc": 9375.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 9375.0, "saldo_real": 0.0}, {"cliente": "COMPAÑIA AGRICOLA INDUSTRIAL SANTA ANA, S. A.", "subcanal": "INSTITUCIONES", "cc": 5863.0, "_30": 0.0, "_60": 441.25, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 6304.25, "saldo_real": 441.25}, {"cliente": "YAKAR, S. A.", "subcanal": "INSTITUCIONES", "cc": 3709.0, "_30": 1104.0, "_60": 0.0, "_90": 6.0, "_120": 125.0, "_121": 102.0, "total": 5046.0, "saldo_real": 1337.0}, {"cliente": "CIBIDIVERSI, S. A.", "subcanal": "INSTITUCIONES", "cc": 4331.5, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 4331.5, "saldo_real": 0.0}, {"cliente": "SUPERMERCADOS VARIOS", "subcanal": "SUPERMERCADO", "cc": 188.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 2509.54, "total": 2697.54, "saldo_real": 2509.54}, {"cliente": "CEMESA", "subcanal": "INSTITUCIONES", "cc": 990.0, "_30": 810.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1800.0, "saldo_real": 810.0}, {"cliente": "HOT DOG'S EJECUTIVOS EL CHINO, LOS SHUKOS", "subcanal": "INSTITUCIONES", "cc": 1568.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1568.0, "saldo_real": 0.0}, {"cliente": "LIGA NACIONAL CONTRA EL CANCER GUATEMALA", "subcanal": "GUBERNAMENTALES", "cc": 320.0, "_30": 1175.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1495.0, "saldo_real": 1175.0}, {"cliente": "ARUDESARROLLOS, S. A.", "subcanal": "INSTITUCIONES", "cc": 630.0, "_30": 812.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1442.0, "saldo_real": 812.0}, {"cliente": "ANTOJITOS", "subcanal": "INSTITUCIONES", "cc": 1411.2, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1411.2, "saldo_real": 0.0}, {"cliente": "CENTRO MEDICO MILITAR", "subcanal": "GUBERNAMENTALES", "cc": 0.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 1221.8, "saldo_real": 0.0}, {"cliente": "H. DE AMATITLAN", "subcanal": "GUBERNAMENTALES", "cc": 0.0, "_30": 0.0, "_60": 0.0, "_90": 600.0, "_120": 0.0, "_121": 0.0, "total": 600.0, "saldo_real": 600.0}, {"cliente": "FOLKLORICA, S. A.", "subcanal": "INSTITUCIONES", "cc": 270.0, "_30": 0.0, "_60": 0.0, "_90": 0.0, "_120": 0.0, "_121": 0.0, "total": 270.0, "saldo_real": 0.0}], "subcanales": ["SUPERMERCADO", "INSTITUCIONES", "GUBERNAMENTALES"], "fecha_corte": "18/05/2026", "actualizado": "18/05/2026 17:36"};
 const state = { subcanales: new Set(), clientes: new Set(), search: '' };
 
 const fmtQ = v => {
